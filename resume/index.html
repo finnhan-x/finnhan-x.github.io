@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="https://finnhan.gitee.io/resume/css/index.css">
     <script>
         function loading() {
-            document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
+            document.getElementsByClassName('avatar').style.display = 'block';
+            document.getElementsByClassName('loading').style.display = 'none';
         }
     </script>
 </head>
@@ -64,7 +64,7 @@
             <!-- 个人肖像 -->
             <section class="me">
                 <section class="portrait">
-                    <div style="display: none;">
+                    <div class="loading">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -72,7 +72,7 @@
                         <span></span>
                     </div>
                     <!-- 头像照片 -->
-                    <img style="display: block;" src="https://finnhan.gitee.io/resume/img/avatar.jpg" >
+                    <img class="avatar" src="https://finnhan.gitee.io/resume/img/avatar.jpg" onload="loading()">
                 </section>
 
                 <h1 class="name">韩鑫</h1>
